@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Preview</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <img src="./img/main-img.webp" id="main-product-img">
-    <div class="product-img-container">
-        <img src="./img/img-1.webp" class="product-img"
-            onclick="changeImage('./img/img-1.webp')">
-        <img src="./img/img-2.webp" class="product-img" onclick="changeImage('./img/img-2.webp')">
-        <img src="./img/img-3.webp" class="product-img" onclick="changeImage('./img/img-3.webp')">
-        <img src="./img/img-4.webp" class="product-img" onclick="changeImage('./img/img-4.webp')">
+    <div class="heading">
+        <h1>Badminton Racket</h1>
+        (Yonex Voltric Series)
+    </div>
+    <div class="Preview-container">
+        <img src="./img/main-img.webp" id="main-product-img">
+        <div class="product-img-container">
+            <img src="./img/img-1.webp" class="product-img" onclick="changeImage('./img/img-1.webp')">
+            <img src="./img/img-2.webp" class="product-img" onclick="changeImage('./img/img-2.webp')">
+            <img src="./img/img-3.webp" class="product-img" onclick="changeImage('./img/img-3.webp')">
+            <img src="./img/img-4.webp" class="product-img" onclick="changeImage('./img/img-4.webp')">
+        </div>
     </div>
 
-    <script>
+        <script>
             function changeImage(imageName) {
                 const mainImage = document.getElementById('main-product-img');
                 mainImage.src = imageName;
             }
-    </script>
+        </script>
 </body>
+
 </html>
